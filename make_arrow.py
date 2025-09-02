@@ -1,0 +1,17 @@
+import argparse
+parser = argparse.ArgumentParser()
+parser.add_argument('--dataset', default='mmimdb', type=str, help='Datasets.')
+parser.add_argument('--root', default='./datasets', type=str, help='Root of datasets')
+args = parser.parse_args()
+
+if args.dataset.lower() == 'mmimdb':
+    from src.utils.write_mmimdb import make_arrow
+    make_arrow(f'{args.root}/mmimdb', './datasets/mmimdb')
+    
+elif args.dataset.lower() == 'food101':
+    from src.utils.write_food101 import make_arrow
+    make_arrow(f'{args.root}/Food101', './datasets/Food101')
+    
+elif args.dataset.lower() == 'hateful_memes':
+    from src.utils.write_hatememes import make_arrow
+    make_arrow(f'{args.root}/Hatememes', './datasets/Hatefull_Memes')
