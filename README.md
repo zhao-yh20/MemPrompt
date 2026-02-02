@@ -80,10 +80,12 @@ python run.py with data_root=<ARROW_ROOT> \
 If you find this work useful for your research, please cite:
 ```Bibtex
 @inproceedings{zhao2025enhancing,
- title = {Enhancing Multimodal Model Robustness under Missing Modalities via Memory-Driven Prompt Learning},
- author = {Yihan zhao and Wei xi and Xiao Fu and Jizhong Zhao},
- booktitle = {International Joint Conference on Artificial Intelligence (IJCAI)},
- year = {2025}
+  title={Enhancing multimodal model robustness under missing modalities via memory-driven prompt learning},
+  author={Zhao, Yihan and Xi, Wei and Fu, Xiao and Zhao, Jizhong},
+  booktitle={Proceedings of the 34th International Joint Conference on Artificial Intelligence, IJCAI 2025},
+  pages={2458--2466},
+  year={2025},
+  organization={International Joint Conferences on Artificial Intelligence}
 }
 
 ```
